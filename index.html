@@ -562,7 +562,7 @@
                 <li>Cada turbina começa olhando para suas próprias features.</li>
                 <li>Na primeira rodada, a T1 "avisa" a T2 e a T3 que ela está bloqueando o vento.</li>
                 <li>Após 15 rodadas de conversa, a T5 já sabe exatamente o impacto que a T1, T2 e T3 causaram nela.</li>
-                <li>Por fim, a rede cospe a <strong>potência exata</strong> que cada turbina vai gerar.</li>
+                <li>Por fim, a rede <strong>calcula a potência prevista</strong> que cada turbina vai gerar.</li>
             </ol>
 
             <h3>A rede por dentro</h3>
@@ -659,8 +659,8 @@
                 <li><strong>Fine-Tuning:</strong> Se o cliente quiser usar um layout muito atípico, o sistema pode ser retreinado especificamente para aquele terreno.</li>
             </ul>
 
-            <h3>A Magia da Velocidade na Otimização</h3>
-            <p>O treinamento levou cerca de 7,8 horas rodando em CPU. Mas agora que o modelo está treinado, usar o PyWake para rodar 10.000 simulações levaria <strong>horas</strong>, enquanto com a GNN essas mesmas 10.000 simulações rodam em <strong>segundos</strong>. Isso permite achar a configuração perfeita de cada turbina usando algoritmos genéticos.</p>
+            <h3>O Benefício da Velocidade na Otimização</h3>
+            <p>O treinamento levou cerca de 7,8 horas rodando em CPU. Mas agora que o modelo está treinado, usar o PyWake para rodar 10.000 simulações levaria <strong>horas</strong>, enquanto com a GNN essas mesmas 10.000 simulações rodam em <strong>segundos</strong>. Isso viabiliza que o engenheiro teste cenários e configurações em tempo real.</p>
         </div>
     </div>
 
@@ -672,7 +672,7 @@
             <button class="close-btn" onclick="closeModal('modal-5')">×</button>
             <h2>📊 O Que o Produto Entrega?</h2>
             
-            <p>A interface final transforma cálculos complexos em decisões de engenharia simples e visuais. O usuário não precisa entender de física ou de redes neurais para usar o software.</p>
+            <p>A interface final transforma cálculos complexos em decisões de engenharia simples e visuais. O engenheiro não precisa ser um especialista na arquitetura da rede neural para usar o software, mas o senso crítico sobre a física do problema continua sendo essencial na engenharia.</p>
 
             <div class="callout">
                 <h4>💡 O que o cliente recebe na tela:</h4>
@@ -687,8 +687,8 @@
             <h3>Apoio à Decisão do Engenheiro</h3>
             <p>Com a resposta em frações de segundo, o engenheiro pode fazer testes de simulação "E se...":</p>
             <ul>
-                <li><em>"E se eu rotacionar a turbina 4 em 15 graus?"</em> → O sistema responde na hora se o parque inteiro vai ganhar ou perder dinheiro com isso.</li>
-                <li><em>"Qual a melhor posição para a nova turbina?"</em> → O sistema varre 10.000 posições em segundos e sugere o melhor layout.</li>
+                <li><em>"E se eu rotacionar a turbina 4 em 15 graus?"</em> → O sistema responde na hora se o parque inteiro vai ganhar ou perder potência com isso.</li>
+                <li><em>"E se eu mover a turbina 2 para uma posição mais afastada?"</em> → O usuário insere a nova coordenada, e o sistema avalia o novo layout em segundos, mostrando o impacto na potência total.</li>
             </ul>
             <p>Além disso, o sistema gera <strong>relatórios comparativos</strong> que mostram o custo-benefício de construir o parque no Layout A ou no Layout B, perfeito para apresentar à diretoria e investidores.</p>
         </div>
